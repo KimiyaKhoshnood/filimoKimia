@@ -9,7 +9,7 @@ const kids = async () => {
   
       let tempForBtnKids = "";
       for (let i in res.data.btnKids) {
-        tempForBtnKids += `<a class="bg-white py-2 px-4 rounded-md text-[13px]" href="#">${res.data.btnKids[i]}</a>`;
+        tempForBtnKids += `<a class="bg-white hover:bg-gray-200 transition-colors duration-200 cursor-pointer py-2 px-4 rounded-md text-[13px]" href="#">${res.data.btnKids[i]}</a>`;
       }
       document.querySelector("#textOfKids>div").innerHTML = tempForBtnKids;
     });

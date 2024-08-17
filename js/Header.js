@@ -7,11 +7,11 @@ const header = async () => {
   
       for (let i in res.data.liitems) {
         if (res.data.liitems[i][1] != false && res.data.liitems[i][2] != false) {
-          html += `<li class="text-gray-300 flex items-center cursor-pointer"><i class="w-[25px] p-1"><img class="w-[20px]" src="${res.data.liitems[i][1]}" alt=""></i>${res.data.liitems[i][0]}<i class="w-[20px]"><img class="w-[20px]" src="${res.data.liitems[i][2]}" alt=""></i></li>`;
+          html += `<li class="text-gray-300 hover:text-amber-500 flex items-center cursor-pointer"><i class="w-[25px] p-1"><img class="w-[20px]" src="${res.data.liitems[i][1]}" alt=""></i>${res.data.liitems[i][0]}<i class="w-[20px]"><img class="w-[20px]" src="${res.data.liitems[i][2]}" alt=""></i></li>`;
         } else if (res.data.liitems[i][1] != false) {
-          html += `<li class="text-gray-300 flex items-center cursor-pointer"><i class="w-[25px] p-1"><img class="w-[20px]" src="${res.data.liitems[i][1]}" alt=""></i>${res.data.liitems[i][0]}</li>`;
+          html += `<li class="text-gray-300 hover:text-amber-500 flex items-center cursor-pointer"><i class="w-[25px] p-1"><img class="w-[20px]" src="${res.data.liitems[i][1]}" alt=""></i>${res.data.liitems[i][0]}</li>`;
         } else if (res.data.liitems[i][2] != false) {
-          html += `<li class="text-gray-300 flex items-center cursor-pointer">${res.data.liitems[i][0]}<i class="w-[25px] p-1"><img class="w-[20px]" src="${res.data.liitems[i][2]}" alt=""></i></li>`;
+          html += `<li class="text-gray-300 hover:text-amber-500 flex items-center cursor-pointer">${res.data.liitems[i][0]}<i class="w-[25px] p-1"><img class="w-[20px]" src="${res.data.liitems[i][2]}" alt=""></i></li>`;
         } else {
           html += `<li class="text-gray-300">${res.data.liitems[i][0]}</li>`;
         }

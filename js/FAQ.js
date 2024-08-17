@@ -5,7 +5,7 @@ const FAQ = async () => {
   
       let tempFAQ = "";
       for (let i in res.data.FAQs) {
-        tempFAQ += `<div class="p-[15px] bg-[#171717] border border-gray-800 rounded-lg flex flex-col gap-2">
+        tempFAQ += `<div class="p-[15px] bg-[#171717] border border-gray-800 rounded-lg flex flex-col gap-2 cursor-pointer">
         <div class="flex">
         <h5 class="text-white text-[15px] flex-1">${res.data.FAQs[i][0]}</h5>
         <div class="w-[20px] flex justify-center items-center"><img class="w-fit h-fit" src="./media/plus-large-svgrepo-com.svg" alt=""></div>

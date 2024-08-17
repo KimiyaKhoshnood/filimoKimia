@@ -1021,6 +1021,10 @@ video {
   height: 100%;
 }
 
+.h-0 {
+  height: 0px;
+}
+
 .max-h-\[475px\] {
   max-height: 475px;
 }
@@ -2287,6 +2291,11 @@ video {
   background-color: rgb(107 114 128 / 0.6);
 }
 
+.bg-gray-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(75 85 99 / var(--tw-bg-opacity));
+}
+
 .bg-gray-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(55 65 81 / var(--tw-bg-opacity));
@@ -2327,12 +2336,76 @@ video {
   background-image: url('/media/bgPicHeaderMainTwoPeople.webp');
 }
 
+.bg-hero2 {
+  background-image: url('/media/bgPicHeaderMain2.webp');
+}
+
+.bg-hero3 {
+  background-image: url('/media/bgPicHeaderMain3.webp');
+}
+
+.bg-hero4 {
+  background-image: url('/media/bgPicHeaderMain4.webp');
+}
+
+.bg-hero5 {
+  background-image: url('/media/bgPicHeaderMain5.webp');
+}
+
+.bg-hero6 {
+  background-image: url('/media/bgPicHeaderMain6.webp');
+}
+
 .bg-mobilebgColor {
   background-image: url('/media/mobilebgColor.webp');
 }
 
+.bg-popFilmAbout1 {
+  background-image: url('/media/popFilmAbout1.webp');
+}
+
+.bg-popFilmAbout2 {
+  background-image: url('/media/popFilmAbout2.webp');
+}
+
+.bg-popFilmAbout3 {
+  background-image: url('/media/popFilmAbout3.webp');
+}
+
+.bg-popFilmAbout4 {
+  background-image: url('/media/popFilmAbout4.webp');
+}
+
+.bg-popFilmAbout5 {
+  background-image: url('/media/popFilmAbout5.webp');
+}
+
+.bg-popFilmAbout6 {
+  background-image: url('/media/popFilmAbout6.webp');
+}
+
 .bg-popImageAbout1 {
   background-image: url('/media/popImageAbout1.webp');
+}
+
+.bg-popImageAbout2 {
+  background-image: url('/media/popImageAbout2.webp');
+}
+
+.bg-popImageAbout3 {
+  background-image: url('/media/popImageAbout3.webp');
+}
+
+.bg-popImageAbout4 {
+  background-image: url('/media/popImageAbout4.webp');
+}
+
+.bg-popImageAbout5 {
+  background-image: url('/media/popImageAbout5.webp');
+}
+
+.bg-popImageAbout6 {
+  background-image: url('/media/popImageAbout6.webp');
 }
 
 .from-purple-500 {
@@ -3032,6 +3105,22 @@ video {
   opacity: 1;
 }
 
+.opacity-50 {
+  opacity: 0.5;
+}
+
+.opacity-5 {
+  opacity: 0.05;
+}
+
+.opacity-85 {
+  opacity: 0.85;
+}
+
+.opacity-80 {
+  opacity: 0.8;
+}
+
 .bg-blend-normal {
   background-blend-mode: normal;
 }
@@ -3302,6 +3391,12 @@ video {
   transition-duration: 150ms;
 }
 
+.transition-colors {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .transition-opacity {
   transition-property: opacity;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -3310,6 +3405,10 @@ video {
 
 .duration-1000 {
   transition-duration: 1000ms;
+}
+
+.duration-200 {
+  transition-duration: 200ms;
 }
 
 .ease-in {
@@ -3481,6 +3580,43 @@ video {
   }
 }
 
+.hover\:bg-black\/5:hover {
+  background-color: rgb(0 0 0 / 0.05);
+}
+
+.hover\:bg-gray-200:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-gray-500:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-gray-600:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(75 85 99 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-green-700:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(21 128 61 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-black\/20:hover {
+  background-color: rgb(0 0 0 / 0.2);
+}
+
+.hover\:bg-black\/30:hover {
+  background-color: rgb(0 0 0 / 0.3);
+}
+
+.hover\:bg-gray-700:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+}
+
 .hover\:font-bold:hover {
   font-weight: 700;
 }
@@ -3488,6 +3624,16 @@ video {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.hover\:text-amber-600:hover {
+  --tw-text-opacity: 1;
+  color: rgb(217 119 6 / var(--tw-text-opacity));
+}
+
+.hover\:text-amber-500:hover {
+  --tw-text-opacity: 1;
+  color: rgb(245 158 11 / var(--tw-text-opacity));
 }
 
 .before\:hover\:text-center:hover::before {
