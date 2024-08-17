@@ -18,6 +18,7 @@ import filimo from "./Filimo.js";
 import footer from "./Footer.js";
 import watchLaterMobile from "./WatchLaterMobile.js";
 import buyFilimo from "./BuyFilimo.js";
+import slider from "./Slider.js";
 
 
 header();
@@ -40,3 +41,4 @@ filimo();
 footer();
 watchLaterMobile();
 buyFilimo();
+slider();
