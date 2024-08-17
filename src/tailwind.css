@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "./setting.css";
+
+@font-face {
+    font-family: "IRANSans";
+    src: url("../font/IRANSANS_MEDIUM.TTF");
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#scrollinSlider::-webkit-scrollbar{
+    width: 3px;
+}
+
+#scrollinSlider::-webkit-scrollbar-track {
+    background: transparent;
+}
+  
+  /* Handle */
+#scrollinSlider::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+.swiper-button-prev1::after {display: none;}
+.swiper-button-next1::after {display: none;}
+
+.swiper-button-prev2::after {display: none;}
+.swiper-button-next2::after {display: none;}
+
+.swiper-button-prev3::after {display: none;}
+.swiper-button-next3::after {display: none;}
+
+.swiper-button-prevMobile::after {display: none;}
+.swiper-button-nextMobile::after {display: none;}
+
+.swiper-paginationMobile .swiper-pagination-bullet-active {
+    background-color: white !important;
+}
+.swiper-paginationMobile .swiper-pagination-bullet {
+    background-color: transparent;
+    border: 2px solid white;
+}
