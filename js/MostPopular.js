@@ -30,7 +30,7 @@ const film = (res) => {
   
     let html = "";
     for (let i in res.data.film) {
-      html += `<li id="mostPopularFilms" class="rounded-xl w-[165px] opacity-80"><img class="rounded-xl w-full" src="${res.data.film[i]}" alt=""></li>`;
+      html += `<li id="mostPopularFilms" class="rounded-xl w-[165px] opacity-80"><img class="rounded-xl w-full transition-all duration-1000" src="${res.data.film[i]}" alt=""></li>`;
     }
     document.querySelector("#popMoviesList").innerHTML = html;
   
@@ -108,7 +108,7 @@ const series = (res) => {
   
     let html = "";
     for (let i in res.data.series) {
-      html += `<li id="mostPopularFilms" class="rounded-xl w-[165px] opacity-80"><img class="rounded-xl w-full" src="${res.data.series[i]}" alt=""></li>`;
+      html += `<li id="mostPopularFilms" class="rounded-xl w-[165px] opacity-80"><img class="rounded-xl w-full  transition-all duration-1000" src="${res.data.series[i]}" alt=""></li>`;
     }
     document.querySelector("#popMoviesList").innerHTML = html;
   

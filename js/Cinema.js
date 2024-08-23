@@ -4,7 +4,7 @@ const cinema = async () => {
   
       let tempCinema = "";
       for (let i in res.data.texts) {
-        tempCinema += `<div class="flex gap-2"><div class="w-[20px] h-[20px] rounded-full bg-green-700/30"><img src="${res.data.checkPic}" alt=""></div><span class="text-gray-400 text-[14px] flex w-fit">${res.data.texts[i]}</span></div>`;
+        tempCinema += `<div class="flex gap-2"><div class="w-[20px] h-[20px] rounded-full bg-green-700/30"><img src="${res.data.checkPic}" alt=""></div><span class="text-gray-300 text-[14px] flex w-fit">${res.data.texts[i]}</span></div>`;
       }
       document.querySelector("#cinemaCheckBox").innerHTML = tempCinema;
   

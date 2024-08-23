@@ -2,7 +2,7 @@ const kids = async () => {
     axios.get("http://localhost:3004/kids").then((res) => {
       document.querySelector(
         "#imgOfKids"
-      ).innerHTML = `<img class="max-h-[475px] max-w-[520x] h-auto" src="${res.data.imgKids}" alt="">`;
+      ).innerHTML = `<img class="max-h-[475px] h-fit max-w-[520x]" src="${res.data.imgKids}" alt="">`;
   
       document.querySelector("#textOfKids>h3").innerHTML = res.data.h3;
       document.querySelector("#textOfKids>span").innerHTML = res.data.span;

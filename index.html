@@ -12,20 +12,22 @@
   </head>
   <body>
     <!-- desktop -->
-    <div dir="rtl" class="font-IranSans lg:block hidden">
+    <div dir="rtl" class="font-IranSans lg:block hidden overflow-x-hidden">
       <!-- header -->
       <div
-        class="justify-center fixed top-0 flex w-full h-fit bg-black py-2 z-50"
+        class="justify-center fixed top-0 flex w-full min-h-12 h-fit bg-black py-2 z-50"
         id="navbar"
       >
         <div
           class="2xl:w-[1440px] w-full flex items-center justify-between px-[60px]"
         >
-          <ul class="flex gap-7 text-xs items-center" id="ulList"></ul>
+          <ul class="flex text-xs items-center flex-wrap" id="ulList">
+            <div id="dropdown" class="absolute top-14 z-50 bg-black text-white p-5 w-[350px] flex-wrap hidden"></div>
+          </ul>
           <div class="flex gap-3">
             <div
               id="btnBuy"
-              class="w-fit py-[10px] px-[16px] text-white bg-green-600 hover:bg-green-700 transition-colors duration-200 rounded-md text-[11px] flex items-center gap-1 cursor-pointer"
+              class="w-fit py-[10px] px-[16px] text-white bg-green-600 hover:bg-green-700 transition-colors duration-200 rounded-md text-[11px] min-w-[113px] flex items-center gap-1 cursor-pointer"
             ></div>
             <div
               id="btnEnter"
@@ -36,14 +38,13 @@
       </div>
 
       <!--hero section-->
-      <!-- bgs on perpose -->
+      <!-- bgs repeat on perpose
+       works on my desktop but it has warnings on vs code
+       if anything, delete them -->
       <div id="heroSection"
         class="mt-12 w-full h-[580px] bg-hero1 bg-hero2 bg-hero3 bg-hero4 bg-hero5 bg-hero6 bg-cover transition-all duration-1000 bg-black"
       > 
         <div
-          style="
-            background-image: linear-gradient(#151515, rgba(0, 0, 0, 0.355), #151515);
-          "
           class="h-full flex justify-center items-end pb-[100px]"
         >
           <div
@@ -94,7 +95,7 @@
           <div id="bgPop" class="h-fit w-full bg-cover bg-popImageAbout1 bg-popImageAbout2 bg-popImageAbout3 bg-popImageAbout4 bg-popImageAbout5 bg-popImageAbout6 bg-popFilmAbout1 bg-popFilmAbout2 bg-popFilmAbout3 bg-popFilmAbout4 bg-popFilmAbout5 bg-popFilmAbout6">
             <div
               class="w-full h-full py-[30px]"
-              style="background-image: linear-gradient(#151515, #1515157b)"
+              id="bgPopLinear"
             >
               <div class="flex w-full h-[200px]">
                 <div class="flex-grow-[1]">
@@ -219,16 +220,8 @@
       </div>
 
       <!-- kids -->
-      <div
+      <div id="kidsDesktop"
         class="bg-[#151515] flex justify-center pt-10"
-        style="
-          background-image: linear-gradient(
-            to top right,
-            #151515,
-            #151515,
-            #123844
-          );
-        "
       >
         <div class="2xl:w-[1440px] w-full px-[60px] flex h-[475px]">
           <div id="imgOfKids" class="w-[50%] h-full flex justify-end"></div>
@@ -305,12 +298,12 @@
         >
           <h3 class="text-white text-[17px]"></h3>
           <span class="text-gray-400 text-[13px] py-4"></span>
-          <div class="lg:w-[1056px] w-[95%] flex flex-col gap-2 py-3"></div>
+          <div class="lg:w-[1000px] w-[95%] flex flex-col gap-2 py-3"></div>
         </div>
       </div>
 
       <!-- filimo -->
-      <div style="background-image: linear-gradient(#101010, #0B1A12, #101010);"
+      <div
         id="filimo"
         class="h-[400px] py-[80px] flex flex-col justify-between items-center"
       >
@@ -325,10 +318,10 @@
       <!-- footer -->
       <div
         id="footer"
-        class="bg-[#191919] sticky bottom-0 z-10 py-1 w-full text-[12px] text-[#959595]  flex"
+        class="bg-[#191919] fixed bottom-0 z-10 py-1 w-full text-[12px] text-[#959595]  flex"
       >
         <span class="flex flex-1 gap-5"></span>
-        <a class="flex items-center hover:text-white" href=""></a>
+        <button class="flex items-center hover:text-white" href=""></button>
       </div>
     </div>
 
@@ -350,13 +343,14 @@
         <!-- list for dots -->
         <div id="listForDots" class="w-fit px-5 py-1 bg-[#1C1C1CF0] absolute top-[80px] left-5 rounded-xl hidden">
           <div class="bg-[#1C1C1CF0] w-[20px] h-[20px] absolute rotate-45 -top-2 right-14 text-gray-300"></div>
-          <ul>
-            <li class="py-3 text-[13px] flex gap-1 min-w-[110px]"><img class="w-[15px]" src="./media/speech-mobile-com.svg" alt="">سوالات متداول</li>
-            <hr>
-            <li class="py-3 text-[13px] flex gap-1 min-w-[110px]"><img class="w-[15px]" src="./media/school-mobile-com.svg" alt="">فیلیمو مدرسه</li>
-            <hr>
-            <li class="py-3 text-[13px] flex gap-1 min-w-[110px]"><img class="w-[15px]" src="./media/download-mobile-com.svg" alt="">اپلیکیشن ها</li>
+          <ul id="dropdownMobile">
           </ul>
+        </div>
+
+        <div id="FAQmobile" class="hidden w-[100vw] min-h-[100vh] py-16 bg-[#3F3F3F] absolute  top-0 right-0 z-30 flex-col items-center">
+          <span class="w-[30px] h-[30px] fixed top-1 left-1 p-1"><img class="rotate-45 w-full h-full" src="./media/plus-svg-white.svg" alt=""></span>
+          <h3 class="w-fit mb-8 text-[19px]"></h3>
+          <div class="w-full flex flex-col gap-2 px-[22px] py-3"></div>
         </div>
       </div>
       
@@ -371,13 +365,6 @@
           >
             <div id="bgHeroMobile" class="absolute -z-10 w-full"></div>
             <div
-              style="
-                background-image: linear-gradient(
-                  rgba(0, 0, 0, 0.355),
-                  #151515,
-                  #151515
-                );
-              "
               class="h-[100vh] flex flex-col"
             >
               <div
@@ -460,7 +447,6 @@
                 class="h-full flex flex-wrap w-full justify-evenly gap-2 overflow-y-scroll"
               ></div>
               <div
-                style="background-image: linear-gradient(transparent, #151515)"
                 class="absolute bottom-0 w-full flex justify-center items-end h-[100px]"
               >
                 <a

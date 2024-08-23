@@ -5,7 +5,7 @@ const free = async () => {
       let tempForSwiper2 = "";
       for (let i in res.data.swiperFree) {
         tempForSwiper2 += `<div class="swiper-slide text-center flex items-center justify-center">
-                    <img class="w-[165px] rounded-xl" src="${res.data.swiperFree[i][0]}" alt=""/>
+                    <img class="w-full rounded-xl" src="${res.data.swiperFree[i][0]}" alt=""/>
                     <h4 class="w-fit text-[11px] py-1 text-white">${res.data.swiperFree[i][1]}</h4>
                   </div>`;
       }

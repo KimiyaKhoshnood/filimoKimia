@@ -18,7 +18,12 @@ const heroSection = async () => {
   
       let tempHeroSection = "";
       for (let i in res.data.underh1) {
-        tempHeroSection += `<div class="flex w-fit gap-1"><div class="w-[20px] h-[20px] rounded-full bg-green-700/30"><img src="${res.data.checkPic}" alt=""></div><span class="text-gray-400 text-[14px] flex w-fit">${res.data.underh1[i]}</span></div>`;
+        tempHeroSection += `<div class="flex w-fit gap-1">
+        <div class="w-[20px] h-[20px] rounded-full bg-green-700/30">
+        <img src="${res.data.checkPic}" alt="">
+        </div>
+        <span class="text-gray-300 text-[14px] flex w-fit">${res.data.underh1[i]}</span>
+        </div>`;
       }
       document.querySelector("#underh1").innerHTML = tempHeroSection;
   

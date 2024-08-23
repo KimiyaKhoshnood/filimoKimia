@@ -13,19 +13,19 @@
     margin: 0;
     padding: 0;
 }
+#heroSection > div {background-image: linear-gradient(#151515, rgba(0, 0, 0, 0.355), #151515);}
+#bgPopLinear {background-image: linear-gradient(#151515, #1515157b)}
+#kidsDesktop { background-image: linear-gradient(to top right, #151515, #151515, #123844);}
+#filimo {background-image: linear-gradient(#101010, #0B1A12, #101010);}
+#bgHeroMobile ~ div {background-image: linear-gradient( rgba(0, 0, 0, 0.355), #151515, #151515);}
+#scrollinSlider ~ div{background-image: linear-gradient(transparent, #151515)}
 
-#scrollinSlider::-webkit-scrollbar{
-    width: 3px;
-}
+#headerItems:hover #dropdown-content {display: flex;}
+#footer button:hover #dropdown-content-buttom {display: flex;}
 
-#scrollinSlider::-webkit-scrollbar-track {
-    background: transparent;
-}
-  
-  /* Handle */
-#scrollinSlider::-webkit-scrollbar-thumb {
-    background: #888;
-}
+#scrollinSlider::-webkit-scrollbar{width: 3px;}
+#scrollinSlider::-webkit-scrollbar-track {background: transparent;}
+#scrollinSlider::-webkit-scrollbar-thumb {background: #888;}
 
 .swiper-button-prev1::after {display: none;}
 .swiper-button-next1::after {display: none;}
@@ -39,9 +39,7 @@
 .swiper-button-prevMobile::after {display: none;}
 .swiper-button-nextMobile::after {display: none;}
 
-.swiper-paginationMobile .swiper-pagination-bullet-active {
-    background-color: white !important;
-}
+.swiper-paginationMobile .swiper-pagination-bullet-active { background-color: white !important;}
 .swiper-paginationMobile .swiper-pagination-bullet {
     background-color: transparent;
     border: 2px solid white;
