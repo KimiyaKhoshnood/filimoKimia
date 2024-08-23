@@ -3818,6 +3818,11 @@ video {
   .\32xl\:w-\[1440px\] {
     width: 1440px;
   }
+
+  .\32xl\:px-\[60px\] {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
