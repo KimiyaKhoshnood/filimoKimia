@@ -3528,6 +3528,10 @@ video {
   transition-duration: 200ms;
 }
 
+.duration-500 {
+  transition-duration: 500ms;
+}
+
 .ease-in {
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
@@ -3817,11 +3821,6 @@ video {
 @media (min-width: 1440px) {
   .\32xl\:w-\[1440px\] {
     width: 1440px;
-  }
-
-  .\32xl\:px-\[60px\] {
-    padding-left: 60px;
-    padding-right: 60px;
   }
 }
 
