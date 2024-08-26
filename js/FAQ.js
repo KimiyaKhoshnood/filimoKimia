@@ -35,7 +35,6 @@ const FAQ = async () => {
       FAQbox[i].addEventListener("click", () => {
         console.log("click");
         if (FAQtext[i].classList.contains("hidden")) {
-          // console.log("");
           FAQtext[i].classList.remove("hidden");
           FAQtopic[i].classList.add("rotate-45");
           document
@@ -45,7 +44,6 @@ const FAQ = async () => {
             .querySelectorAll("#FAQ>div>div>div:nth-child(1)>h5")
             [i].classList.add("text-[#F4843F]");
         } else {
-          // console.log("no");
           FAQtext[i].classList.add("hidden");
           FAQtopic[i].classList.remove("rotate-45");
           document

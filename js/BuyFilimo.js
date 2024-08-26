@@ -1,12 +1,14 @@
+import btnBuy from "./BtnBuyMobile.js";
+
 const buyFilimo = async () => {
     axios.get("http://localhost:3004/buyFilimo").then((res) => {
       document.querySelector(
         "#buyFilimo>div:nth-child(1)"
       ).innerHTML = `<img class="w-[160px] px-1" src="${res.data.logo}" alt="">`;
       document.querySelector("#buyFilimo>h2").innerHTML = res.data.h2;
-      document.querySelector(
-        "#buyFilimo>a"
-      ).innerHTML = `<img class="w-[25px]" src="${res.data.btnBuy[1]}" alt="">${res.data.btnBuy[0]}`;
+
+      btnBuy(document.querySelector("#buyFilimo>a"))
+
       document.querySelector(
         "#buyFilimo>span"
       ).innerHTML = `<img class="w-[20px] p-1" src="${res.data.span[1]}" alt="">${res.data.span[0]}`;

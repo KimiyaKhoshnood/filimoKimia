@@ -1,3 +1,5 @@
+import btnBuy from "./BtnBuyMobile.js";
+
 const heroMobile = async () => {
     axios.get("http://localhost:3004/heroSection").then((res) => {
       let tempforbgHeroMobile = ""
@@ -23,9 +25,9 @@ const heroMobile = async () => {
   
       document.querySelector("#heroMobile>h1").innerHTML = res.data.toph1;
       document.querySelector("#heroMobile>span").innerHTML = res.data.spanMobile;
-      document.querySelector(
-        "#btnBuyHeroMobile"
-      ).innerHTML = `<img class="w-[25px]" src="${res.data.btnBuyMobile[1]}" alt="">${res.data.btnBuyMobile[0]}`;
+
+      btnBuy(document.querySelector("#btnBuyHeroMobile"))
+
       document.querySelector(
         "#heroMobile>div"
       ).innerHTML = `<img class="w-fit" src="${res.data.logoMobile}" alt="">`;

@@ -30,7 +30,6 @@
       "می‌تونی یک عضو، مخصوص تماشای کودک بسازی"
     ],
     "btnBuy": ["خرید اشتراک و تماشا", "./media/film-play-icon.svg"],
-    "btnBuyMobile": ["خرید اشتراک", "./media/film-play-icon.svg"],
     "underBtn": ["تخفیف ویژه برای کاربران جدید", "./media/gift-svg-hero.svg"],
     "logoMobile": "./media/filimo_logo_without_text.webp",
     "bg": [
@@ -316,7 +315,6 @@
     "topic": "محتواهای رایگان",
     "topicMobile": "فیلم و سریال های رایگان",
     "span": "تماشای بدون اشتراک",
-    "btnBuyMobile": ["خرید اشتراک", "./media/film-play-icon.svg"],
     "swiperFree": [
       ["./media/free1.webp", "راز دشت تاران"],
       ["./media/free2.webp", "پنجه در خاک"],
@@ -454,7 +452,6 @@
     "img": "./media/watchLaterImgQuality.webp",
     "h2": "دانلود کنید و بعدا تماشا کنید",
     "span": "امکان دانلود نامحدود، برای تماشای بدون اینترنت",
-    "btnBuyMobile": ["خرید اشتراک", "./media/film-play-icon.svg"],
     "topAnimation": "./media/cartoonsMobile.webp",
     "pics": [
       "./media/mobileMovie1.webp",
@@ -470,7 +467,6 @@
   "buyFilimo": {
     "logo": "./media/filimo-logoWithBoxMobile.webp",
     "h2": "به دنیای سرگرم کننده فیلیمو وارد شو",
-    "btnBuy": ["خرید اشتراک", "./media/film-play-icon.svg"],
     "span": [
       "تخفیف ویژه برای کاربران جدید",
       "./media/ticket-outline-svgrepo-com.svg"
@@ -484,5 +480,6 @@
       "انتشار فیلم و‌سریال‌های ویژه نابینایان و ناشنوایان",
       "قابلیت انتخاب رده سنی برای تماشای محتوای مناسب برای کودکان و نوجوانان"
     ]
-  }
+  },
+  "btnBuy": ["خرید اشتراک", "./media/film-play-icon.svg"]
 }

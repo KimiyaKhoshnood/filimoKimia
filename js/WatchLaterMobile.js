@@ -1,3 +1,5 @@
+import btnBuy from "./BtnBuyMobile.js";
+
 const watchLaterMobile = async () => {
     axios.get("http://localhost:3004/watchLaterMobile").then((res) => {
       let tempforWatch = ""
@@ -26,10 +28,9 @@ const watchLaterMobile = async () => {
       ).innerHTML = `<img class="w-[200px] h-fit" src="${res.data.img}" alt="">`;
       document.querySelector("#watchLaterMobile>h2").innerHTML = res.data.h2;
       document.querySelector("#watchLaterMobile>span").innerHTML = res.data.span;
-  
-      document.querySelector(
-        "#watchLaterMobile>a"
-      ).innerHTML = `<img class="w-[25px]" src="${res.data.btnBuyMobile[1]}" alt="">${res.data.btnBuyMobile[0]}`;
+
+      btnBuy(document.querySelector("#watchLaterMobile>a"))
+
     });
 };
 
