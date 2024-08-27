@@ -8,7 +8,7 @@ const footer = async () => {
       document.querySelector(
         "#footer>button"
       ).innerHTML = `${res.data.left[0]}<img class="w-[25px] p-[3px]" src="${res.data.left[1]}" alt="">
-      <div id="dropdown-content-buttom" class="hidden fixed bottom-6 w-[110px] bg-[#181818] p-3 rounded-md flex-wrap">${tempDropdownFooter}</div>`;
+      <div id="dropdown-content-buttom" class="hidden fixed bottom-6 w-[110px] bg-[#181818] p-3 rounded-md flex-wrap shadow-md shadow-black">${tempDropdownFooter}</div>`;
 
   
       let tempfooter = "";
@@ -25,7 +25,7 @@ const footer = async () => {
 
             tempfooter += `<button class="flex items-center hover:text-white" href="">
             <img class="w-[25px] p-[3px]" src="${res.data.right[i][1]}" alt="">${res.data.right[i][0]}
-            <div id="dropdown-content-buttom" class="hidden fixed bottom-7 w-[150px] bg-[#181818] p-3 rounded-md flex-wrap">${tempDropdownFooter}</div>
+            <div id="dropdown-content-buttom" class="hidden fixed bottom-7 w-[150px] bg-[#181818] p-3 rounded-md flex-wrap shadow-md shadow-black">${tempDropdownFooter}</div>
             </button>`;
           }
         } else {

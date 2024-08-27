@@ -20,12 +20,13 @@ const header = async () => {
           <button class="flex items-center py-2">
           <i class="w-[25px] p-1"><img class="w-[20px]" src="${res.data.liitems[i][1]}" alt=""></i>
           ${res.data.liitems[i][0]}
-          <i class="w-[20px]"><img class="w-[20px]" src="${res.data.liitems[i][2]}" alt=""></i>
+          <i class="w-[20px]" id="imgdropdown"><img class="w-[20px]" src="${res.data.liitems[i][2]}" alt=""></i>
           </button>
           <div id="dropdown-content" class="hidden absolute bg-[#181818] w-[330px] z-10 p-2 rounded-md flex-wrap">${tempDropdown}</div>
           </li>`;
           
           // dropdown
+
 
         } else if (res.data.liitems[i][1] != false) {
           html2 += `<li id="headerItems" class="text-gray-300 hover:text-amber-500 flex items-center cursor-pointer">
@@ -43,9 +44,9 @@ const header = async () => {
           html2 += `<li id="headerItems" class="text-gray-300 hover:text-amber-500 cursor-pointer">
           <button class="flex items-center py-2">
           ${res.data.liitems[i][0]}
-          <i class="w-[25px] p-1"><img class="w-[20px]" src="${res.data.liitems[i][2]}" alt=""></i>
+          <i class="w-[25px] p-1" id="imgdropdown"><img class="w-[20px]" src="${res.data.liitems[i][2]}" alt=""></i>
           </button>
-          <div id="dropdown-content" class="hidden absolute bg-[#181818] w-[330px] z-10 p-2 rounded-md flex-wrap">${tempDropdown}</div>
+          <div id="dropdown-content" class="hidden absolute bg-[#181818] w-[330px] z-10 p-2 rounded-md flex-wrap shadow-md shadow-black">${tempDropdown}</div>
           </li>`;
 
           // dropdown
@@ -57,7 +58,6 @@ const header = async () => {
 
       ulList.innerHTML = html;
       document.querySelector("#headerItemsBox").innerHTML = html2
-
 
       document.querySelector(
         "#btnBuy"

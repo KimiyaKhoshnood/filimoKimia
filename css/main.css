@@ -1033,10 +1033,6 @@ video {
   height: 580px;
 }
 
-.h-\[60px\] {
-  height: 60px;
-}
-
 .h-\[66px\] {
   height: 66px;
 }
@@ -1054,52 +1050,20 @@ video {
   height: 100%;
 }
 
-.h-auto {
-  height: auto;
-}
-
-.h-\[50px\] {
-  height: 50px;
+.\!max-h-\[200px\] {
+  max-height: 200px !important;
 }
 
 .max-h-\[475px\] {
   max-height: 475px;
 }
 
-.max-h-\[50px\] {
-  max-height: 50px;
-}
-
-.max-h-\[500px\] {
-  max-height: 500px;
-}
-
-.max-h-\[70px\] {
-  max-height: 70px;
-}
-
-.max-h-\[100px\] {
-  max-height: 100px;
-}
-
-.max-h-\[90px\] {
-  max-height: 90px;
-}
-
 .max-h-\[55px\] {
   max-height: 55px;
 }
 
-.\!max-h-\[500px\] {
-  max-height: 500px !important;
-}
-
-.\!max-h-\[200px\] {
-  max-height: 200px !important;
-}
-
-.max-h-\[80px\] {
-  max-height: 80px;
+.max-h-\[90px\] {
+  max-height: 90px;
 }
 
 .min-h-12 {
@@ -1315,9 +1279,9 @@ video {
   border-collapse: separate;
 }
 
-.rotate-45 {
-  --tw-rotate: 45deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+.\!rotate-45 {
+  --tw-rotate: 45deg !important;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
 }
 
 .rotate-0 {
@@ -1325,9 +1289,9 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.\!rotate-45 {
-  --tw-rotate: 45deg !important;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
+.rotate-45 {
+  --tw-rotate: 45deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .-skew-x-\[20deg\] {
@@ -3433,6 +3397,17 @@ video {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-md {
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-black {
+  --tw-shadow-color: #000;
+  --tw-shadow: var(--tw-shadow-colored);
 }
 
 .outline-none {
