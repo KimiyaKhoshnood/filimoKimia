@@ -15,12 +15,12 @@ const FAQ = async () => {
         }
       }
 
-      tempFAQ += `<div class="p-[15px] bg-[#171717] border border-gray-800 rounded-lg flex flex-col gap-2 cursor-pointer">
+      tempFAQ += `<div class="p-[15px] bg-[#171717] border border-gray-800 rounded-lg flex flex-col gap-2 max-h-[55px] cursor-pointer transition-all duration-1000 ease-linear">
         <div class="flex">
-        <h5 class="text-white text-[15px] flex-1">${res.data.FAQs[i][0]}</h5>
-        <div class="w-[20px] flex justify-center items-center"><img class="w-fit h-fit" src="./media/plus-large-svgrepo-com.svg" alt=""></div>
+          <h5 class="text-white text-[15px] flex-1">${res.data.FAQs[i][0]}</h5>
+          <div class="w-[20px] flex justify-center items-center rotate-0"><img class="w-fit h-fit" src="./media/plus-large-svgrepo-com.svg" alt=""></div>
         </div>
-        <div class="text-[#B6B6B6] text-[12px] hidden">${word}</div>
+        <div class="text-[#B6B6B6] text-[12px] hidden overflow-hidden">${word}</div>
         </div>`;
     }
     document.querySelector("#FAQ>div").innerHTML = tempFAQ;
@@ -35,8 +35,9 @@ const FAQ = async () => {
       FAQbox[i].addEventListener("click", () => {
         console.log("click");
         if (FAQtext[i].classList.contains("hidden")) {
+          FAQbox[i].classList.add("!max-h-[200px]");
           FAQtext[i].classList.remove("hidden");
-          FAQtopic[i].classList.add("rotate-45");
+          FAQtopic[i].classList.add("!rotate-45");
           document
             .querySelectorAll("#FAQ>div>div>div:nth-child(1)>h5")
             [i].classList.remove("text-white");
@@ -44,8 +45,9 @@ const FAQ = async () => {
             .querySelectorAll("#FAQ>div>div>div:nth-child(1)>h5")
             [i].classList.add("text-[#F4843F]");
         } else {
+          FAQbox[i].classList.remove("!max-h-[200px]");
           FAQtext[i].classList.add("hidden");
-          FAQtopic[i].classList.remove("rotate-45");
+          FAQtopic[i].classList.remove("!rotate-45");
           document
             .querySelectorAll("#FAQ>div>div>div:nth-child(1)>h5")
             [i].classList.remove("text-[#F4843F]");
@@ -75,12 +77,12 @@ const FAQ = async () => {
             }
           }
 
-          tempFAQmobile += `<div class="p-[15px] bg-[#3A3A3A] rounded-lg flex flex-col gap-2 cursor-pointer">
+          tempFAQmobile += `<div class="p-[15px] bg-[#3A3A3A] rounded-lg flex flex-col gap-2 max-h-[90px] cursor-pointer transition-all duration-500 ease-linear">
           <div class="flex">
           <h5 class="text-white text-[13px] flex-1">${res.data.FAQs[i][0]}</h5>
           <div class="w-[20px] flex justify-center items-center"><img class="w-fit h-fit" src="./media/plus-svg-green.svg" alt=""></div>
           </div>
-          <div class="text-[#B6B6B6] text-[12px] hidden leading-6">${wordMobile}</div>
+          <div class="text-[#B6B6B6] text-[12px] hidden leading-6 overflow-hidden">${wordMobile}</div>
           </div>`;
         }
         document.querySelector("#FAQmobile>div").innerHTML = tempFAQmobile;
@@ -97,6 +99,7 @@ const FAQ = async () => {
           FAQboxMobile[i].addEventListener("click", () => {
             console.log("click");
             if (FAQtextMobile[i].classList.contains("hidden")) {
+              FAQboxMobile[i].classList.add("!max-h-[200px]");
               FAQtextMobile[i].classList.remove("hidden");
               FAQtopicMobile[i].classList.add("rotate-45");
               document
@@ -106,6 +109,7 @@ const FAQ = async () => {
                 .querySelectorAll("#FAQmobile>div>div>div:nth-child(1)>h5")
                 [i].classList.add("text-[#1CB561]");
             } else {
+              FAQboxMobile[i].classList.remove("!max-h-[200px]");
               FAQtextMobile[i].classList.add("hidden");
               FAQtopicMobile[i].classList.remove("rotate-45");
               document

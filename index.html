@@ -22,7 +22,10 @@
           class="2xl:w-[1440px] w-full flex items-center justify-between px-[60px]"
         >
           <ul class="flex text-xs items-center flex-wrap" id="ulList">
-            <div id="dropdown" class="absolute top-14 z-50 bg-black text-white p-5 w-[350px] flex-wrap hidden"></div>
+            <div
+              id="dropdown"
+              class="absolute top-14 z-50 bg-black text-white p-5 w-[350px] flex-wrap hidden"
+            ></div>
           </ul>
           <div class="flex gap-3">
             <div
@@ -41,12 +44,11 @@
       <!-- bgs repeat on perpose
        works on my desktop but it has warnings on vs code
        if anything, delete them -->
-      <div id="heroSection"
+      <div
+        id="heroSection"
         class="mt-12 w-full h-[580px] bg-hero1 bg-hero2 bg-hero3 bg-hero4 bg-hero5 bg-hero6 bg-cover transition-all duration-1000 bg-black"
-      > 
-        <div
-          class="h-full flex justify-center items-end pb-[100px]"
-        >
+      >
+        <div class="h-full flex justify-center items-end pb-[100px]">
           <div
             class="2xl:w-[1440px] w-full h-fit flex justify-center items-center flex-col"
           >
@@ -92,11 +94,11 @@
           <ul id="popMoviesList" class="flex justify-between py-5 gap-3"></ul>
 
           <!-- bgs on perpose -->
-          <div id="bgPop" class="h-fit w-full bg-cover bg-popImageAbout1 bg-popImageAbout2 bg-popImageAbout3 bg-popImageAbout4 bg-popImageAbout5 bg-popImageAbout6 bg-popFilmAbout1 bg-popFilmAbout2 bg-popFilmAbout3 bg-popFilmAbout4 bg-popFilmAbout5 bg-popFilmAbout6">
-            <div
-              class="w-full h-full py-[30px]"
-              id="bgPopLinear"
-            >
+          <div
+            id="bgPop"
+            class="h-fit w-full bg-cover bg-popImageAbout1 bg-popImageAbout2 bg-popImageAbout3 bg-popImageAbout4 bg-popImageAbout5 bg-popImageAbout6 bg-popFilmAbout1 bg-popFilmAbout2 bg-popFilmAbout3 bg-popFilmAbout4 bg-popFilmAbout5 bg-popFilmAbout6"
+          >
+            <div class="w-full h-full py-[30px]" id="bgPopLinear">
               <div class="flex w-full h-[200px]">
                 <div class="flex-grow-[1]">
                   <h3
@@ -123,8 +125,20 @@
                   <div class="swiper-wrapper" id="swiperitems">
                     <!--  -->
                   </div>
-                  <div class="swiper-button-next swiper-button-next1"><img class="bg-gray-500/60 rounded-full p-1" src="./media/after-swiper-svg.svg" alt=""></div>
-                  <div class="swiper-button-prev swiper-button-prev1"><img class="bg-gray-500/60 rounded-full p-1" src="./media/before-swiper-svg.svg" alt=""></div>
+                  <div class="swiper-button-next swiper-button-next1">
+                    <img
+                      class="bg-gray-500/60 rounded-full p-1"
+                      src="./media/after-swiper-svg.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-button-prev swiper-button-prev1">
+                    <img
+                      class="bg-gray-500/60 rounded-full p-1"
+                      src="./media/before-swiper-svg.svg"
+                      alt=""
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -212,17 +226,27 @@
               <div class="swiper-wrapper" id="swiperitems2">
                 <!--  -->
               </div>
-              <div class="swiper-button-next swiper-button-next2"><img class="bg-gray-500/60 rounded-full p-1" src="./media/after-swiper-svg.svg" alt=""></div>
-              <div class="swiper-button-prev swiper-button-prev2"><img class="bg-gray-500/60 rounded-full p-1" src="./media/before-swiper-svg.svg" alt=""></div>
+              <div class="swiper-button-next swiper-button-next2">
+                <img
+                  class="bg-gray-500/60 rounded-full p-1"
+                  src="./media/after-swiper-svg.svg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-button-prev swiper-button-prev2">
+                <img
+                  class="bg-gray-500/60 rounded-full p-1"
+                  src="./media/before-swiper-svg.svg"
+                  alt=""
+                />
+              </div>
             </div>
           </div>
         </div>
       </div>
 
       <!-- kids -->
-      <div id="kidsDesktop"
-        class="bg-[#151515] flex justify-center pt-10"
-      >
+      <div id="kidsDesktop" class="bg-[#151515] flex justify-center pt-10">
         <div class="2xl:w-[1440px] w-full px-[60px] flex h-[475px]">
           <div id="imgOfKids" class="w-[50%] h-full flex justify-end"></div>
           <div
@@ -268,18 +292,35 @@
       <!-- comments -->
       <div class="bg-[#151515] flex justify-center py-[65px]">
         <div class="2xl:w-[1440px] w-full px-[60px] flex flex-col">
-          
           <div class="w-full">
             <div class="swiper mySwiper3 w-full">
               <div class="flex">
-                <h3 id="commentsh3" class="text-white font-extrabold text-[18px] pb-6 flex-1"></h3>
+                <h3
+                  id="commentsh3"
+                  class="text-white font-extrabold text-[18px] pb-6 flex-1"
+                ></h3>
                 <div class="w-[80px]">
-                  <div class="swiper-button-next swiper-button-next3 !absolute !top-6"><img class="bg-gray-500/60 rounded-full p-1" src="./media/after-swiper-svg.svg" alt=""></div>
-                  <div class="swiper-button-prev swiper-button-prev3 !relative !top-6 
-                  !right-[10px]"><img class="bg-gray-500/60 rounded-full p-1" src="./media/before-swiper-svg.svg" alt=""></div>
+                  <div
+                    class="swiper-button-next swiper-button-next3 !absolute !top-6"
+                  >
+                    <img
+                      class="bg-gray-500/60 rounded-full p-1"
+                      src="./media/after-swiper-svg.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="swiper-button-prev swiper-button-prev3 !relative !top-6 !right-[10px]"
+                  >
+                    <img
+                      class="bg-gray-500/60 rounded-full p-1"
+                      src="./media/before-swiper-svg.svg"
+                      alt=""
+                    />
+                  </div>
                 </div>
               </div>
-              
+
               <div class="swiper-wrapper" id="swiperitems3">
                 <!--  -->
               </div>
@@ -298,6 +339,7 @@
         >
           <h3 class="text-white text-[17px]"></h3>
           <span class="text-gray-400 text-[13px] py-4"></span>
+          <!-- innerHTML FAQ boxs here -->
           <div class="lg:w-[1000px] w-[95%] flex flex-col gap-2 py-3"></div>
         </div>
       </div>
@@ -311,14 +353,14 @@
         <span class="spanBoxCinema flex gap-20"></span>
         <a
           href="#"
-          class="bg-green-600 hover:bg-green-700  transition-colors duration-200 cursor-pointer rounded-md w-[285px] py-[17px] flex justify-center items-center text-white gap-1"
+          class="bg-green-600 hover:bg-green-700 transition-colors duration-200 cursor-pointer rounded-md w-[285px] py-[17px] flex justify-center items-center text-white gap-1"
         ></a>
       </div>
 
       <!-- footer -->
       <div
         id="footer"
-        class="bg-[#191919] fixed bottom-0 z-10 py-1 w-full text-[12px] text-[#959595]  flex"
+        class="bg-[#191919] fixed bottom-0 z-10 py-1 w-full text-[12px] text-[#959595] flex"
       >
         <span class="flex flex-1 gap-5"></span>
         <button class="flex items-center hover:text-white" href=""></button>
@@ -326,7 +368,9 @@
     </div>
 
     <!-- mobile -->
-    <div dir="rtl" class="font-IranSans lg:hidden block w-full h-[100vh] text-white box-border"
+    <div
+      dir="rtl"
+      class="font-IranSans lg:hidden block w-full h-[100vh] text-white box-border"
     >
       <!-- header mobile -->
       <div
@@ -337,36 +381,44 @@
         <div class="flex h-fit gap-1">
           <div class="bg-[#1E1E1E] p-2 h-full rounded-lg"></div>
           <div class="bg-[#1E1E1E] p-2 h-full rounded-lg"></div>
-          <div class="bg-[#1E1E1E] py-2 px-4 h-fit rounded-lg text-[14px]"></div>
+          <div
+            class="bg-[#1E1E1E] py-2 px-4 h-fit rounded-lg text-[14px]"
+          ></div>
         </div>
 
         <!-- list for dots -->
-        <div id="listForDots" class="w-fit px-5 py-1 bg-[#1C1C1CF0] absolute top-[80px] left-5 rounded-xl hidden">
-          <div class="bg-[#1C1C1CF0] w-[20px] h-[20px] absolute rotate-45 -top-2 right-14 text-gray-300"></div>
-          <ul id="dropdownMobile">
-          </ul>
+        <div
+          id="listForDots"
+          class="w-fit px-5 py-1 bg-[#1C1C1CF0] absolute top-[80px] left-5 rounded-xl hidden"
+        >
+          <div
+            class="bg-[#1C1C1CF0] w-[20px] h-[20px] absolute rotate-45 -top-2 right-14 text-gray-300"
+          ></div>
+          <ul id="dropdownMobile"></ul>
         </div>
 
-        <div id="FAQmobile" class="hidden w-[100vw] min-h-[100vh] py-16 bg-[#3F3F3F] absolute  top-0 right-0 z-30 flex-col items-center">
-          <span class="w-[30px] h-[30px] fixed top-1 left-1 p-1"><img class="rotate-45 w-full h-full" src="./media/plus-svg-white.svg" alt=""></span>
+        <div
+          id="FAQmobile"
+          class="hidden w-[100vw] min-h-[100vh] py-16 bg-[#3F3F3F] absolute top-0 right-0 z-30 flex-col items-center"
+        >
+          <span class="w-[30px] h-[30px] fixed top-1 left-1 p-1"
+            ><img
+              class="rotate-45 w-full h-full"
+              src="./media/plus-svg-white.svg"
+              alt=""
+          /></span>
           <h3 class="w-fit mb-8 text-[19px]"></h3>
           <div class="w-full flex flex-col gap-2 px-[22px] py-3"></div>
         </div>
       </div>
-      
 
       <!-- SwiperMobile -->
       <div class="swiper mySwiperMobile h-full bg-mobilebgColor bg-cover">
         <div class="swiper-wrapper">
-
           <!-- Slide 1 -->
-          <div
-            class="swiper-slide overflow-hidden"
-          >
+          <div class="swiper-slide overflow-hidden">
             <div id="bgHeroMobile" class="absolute -z-10 w-full"></div>
-            <div
-              class="h-[100vh] flex flex-col"
-            >
+            <div class="h-[100vh] flex flex-col">
               <div
                 id="heroMobile"
                 class="flex flex-col items-center mb-[40px] gap-3 h-full justify-end"
@@ -384,10 +436,7 @@
           </div>
 
           <!-- Slide 2 -->
-          <div
-            id="filimoDevicesMobile"
-            class="swiper-slide "
-          >
+          <div id="filimoDevicesMobile" class="swiper-slide">
             <div
               class="flex flex-col items-center justify-end pb-[40px] h-full"
             >
@@ -405,9 +454,7 @@
           </div>
 
           <!-- Slide 3 -->
-          <div
-            class="swiper-slide overflow-hidden"
-          >
+          <div class="swiper-slide overflow-hidden">
             <div
               id="watchLaterMobile"
               class="flex flex-col items-center justify-end pb-[40px] h-full"
@@ -431,9 +478,7 @@
           </div>
 
           <!-- Slide 4 -->
-          <div
-            class="swiper-slide h-[100vh]"
-          >
+          <div class="swiper-slide h-[100vh]">
             <div
               id="freeMobile"
               class="flex flex-col items-center justify-end h-full"
@@ -459,16 +504,19 @@
           </div>
 
           <!-- Slide 5 -->
-          <div
-            class="swiper-slide"
-          >
-            <div class="w-full pt-[40px] flex flex-col items-center gap-5 overflow-hidden">
+          <div class="swiper-slide">
+            <div
+              class="w-full pt-[40px] flex flex-col items-center gap-5 overflow-hidden"
+            >
               <div id="topAnimationKids" class="h-fit w-full">
                 <div class="flex w-[1694px] relative top-0 right-0"></div>
               </div>
 
               <h2 id="h2KidsMobile" class="font-bold text-[20px] pt-10"></h2>
-              <span id="spanKidsMobile" class="text-[14px] text-white flex items-center pb-7"></span>
+              <span
+                id="spanKidsMobile"
+                class="text-[14px] text-white flex items-center pb-7"
+              ></span>
 
               <div id="bottomAnimationKids" class="h-[66px] w-full flex">
                 <div class="flex relative top-0 right-0 w-fit"></div>
@@ -477,9 +525,7 @@
           </div>
 
           <!-- Slide 6 -->
-          <div
-            class="swiper-slide"
-          >
+          <div class="swiper-slide">
             <div
               id="cinemaMobile"
               class="flex flex-col items-center pt-[100px] gap-5"
@@ -491,35 +537,43 @@
           </div>
 
           <!-- Slide 7 -->
-          <div
-            class="swiper-slide h-[100vh]"
-          >
-            <div id="buyFilimo" class="flex flex-col justify-center items-center gap-4 h-full">
+          <div class="swiper-slide h-[100vh]">
+            <div
+              id="buyFilimo"
+              class="flex flex-col justify-center items-center gap-4 h-full"
+            >
               <div></div>
               <h2 class="font-bold text-[20px]"></h2>
               <a
                 class="bg-green-600 hover:bg-green-700 transition-colors duration-200 cursor-pointer rounded-md w-[80%] px-[24px] py-[10px] flex justify-center items-center text-white gap-1 text-[15px]"
                 href="#"
               ></a>
-              <span class="text-[11px] text-gray-400 flex items-center pb-4"></span>
+              <span
+                class="text-[11px] text-gray-400 flex items-center pb-4"
+              ></span>
               <div
                 id="spansOfbuyFilimo"
                 class="w-[312px] flex flex-col gap-1"
               ></div>
             </div>
           </div>
-
         </div>
 
         <div class="w-full h-10 !absolute !bottom-0 !z-20 flex">
-          <div class="swiper-button-prev swiper-button-prevMobile !absolute !top-5 !z-50"><img src="./media/right-arrow-mobile.svg" alt=""></div>
-          <div class="swiper-button-next swiper-button-nextMobile !absolute !top-5 !z-50"><img src="./media/left-arrow-mobile.svg" alt=""></div>
+          <div
+            class="swiper-button-prev swiper-button-prevMobile !absolute !top-5 !z-50"
+          >
+            <img src="./media/right-arrow-mobile.svg" alt="" />
+          </div>
+          <div
+            class="swiper-button-next swiper-button-nextMobile !absolute !top-5 !z-50"
+          >
+            <img src="./media/left-arrow-mobile.svg" alt="" />
+          </div>
           <div class="swiper-pagination swiper-paginationMobile"></div>
         </div>
       </div>
     </div>
-
-
 
     <script src="./node_modules/axios/dist/axios.min.js"></script>
     <script src="./js/script.js" type="module"></script>

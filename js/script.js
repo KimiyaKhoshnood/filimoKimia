@@ -20,7 +20,6 @@ import watchLaterMobile from "./WatchLaterMobile.js";
 import buyFilimo from "./BuyFilimo.js";
 import slider from "./Slider.js";
 
-
 header();
 headerMobile();
 heroSection();
