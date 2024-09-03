@@ -52,7 +52,7 @@ const header = async () => {
           // dropdown
 
         } else {
-          html2 += `<li id="headerItems" class="text-gray-300">${res.data.liitems[i][0]}</li>`;
+          html2 += `<li id="headerItems" class="text-gray-300 hover:text-amber-500 cursor-pointer">${res.data.liitems[i][0]}</li>`;
         }
       }
 

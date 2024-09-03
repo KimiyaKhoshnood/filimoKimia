@@ -8,11 +8,6 @@
     src: url("../font/IRANSANS_MEDIUM.TTF");
 }
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
 #heroSection > div {background-image: linear-gradient(#151515, rgba(0, 0, 0, 0.355), #151515);}
 #bgPopLinear {background-image: linear-gradient(#151515, #1515157b)}
 #kidsDesktop { background-image: linear-gradient(to top right, #151515, #151515, #123844);}
