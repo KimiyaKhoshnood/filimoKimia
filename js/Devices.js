@@ -1,41 +1,43 @@
 const devices = async () => {
-    axios.get("http://localhost:3004/devices").then((res) => {
-      document.querySelector(
-        "#imgOfDevices"
-      ).innerHTML = `<img class="h-fit" src="${res.data.imgDevices}" alt="">`;
-      document.querySelector("#textOfDevices>h3").innerHTML =
-        res.data.texts.h3[0];
-      document.querySelector("#textOfDevices>span").innerHTML =
-        res.data.texts.h3[1];
-  
-      document.querySelector(
-        "#sectionh4-1>div:nth-child(1)"
-      ).innerHTML = `<img class="h-fit" src="${res.data.texts.h4[0][0]}" alt="">`;
-      document.querySelector("#sectionh4-1>div:nth-child(2)>h4").innerHTML =
-        res.data.texts.h4[0][1];
-      document.querySelector("#sectionh4-1>div:nth-child(2)>span").innerHTML =
-        res.data.texts.h4[0][2];
-  
-      document.querySelector(
-        "#sectionh4-2>div:nth-child(1)"
-      ).innerHTML = `<img class="h-fit" src="${res.data.texts.h4[1][0]}" alt="">`;
-      document.querySelector("#sectionh4-2>div:nth-child(2)>h4").innerHTML =
-        res.data.texts.h4[1][1];
-      document.querySelector("#sectionh4-2>div:nth-child(2)>span").innerHTML =
-        res.data.texts.h4[1][2];
-  
-      document.querySelector(
-        "#sectionh4-3>div:nth-child(1)"
-      ).innerHTML = `<img class="h-fit" src="${res.data.texts.h4[2][0]}" alt="">`;
-      document.querySelector("#sectionh4-3>div:nth-child(2)>h4").innerHTML =
-        res.data.texts.h4[2][1];
-      document.querySelector("#sectionh4-3>div:nth-child(2)>span").innerHTML =
-        res.data.texts.h4[2][2];
-  
-      document.querySelector(
-        "#btnBuyDevices"
-      ).innerHTML = `<img class="w-[25px]" src="${res.data.btnBuy[1]}" alt="">${res.data.btnBuy[0]}`;
-    });
+  try {
+    const res = await axios.get("http://localhost:3004/devices");
+    devicesCodes(res);
+  } catch (error) {
+    console.log(error.message);
+  }
+};
+
+const devicesCodes = (res) => {
+  document.querySelector(
+    "#imgOfDevices"
+  ).innerHTML = `<img class="h-fit" src="${res.data.imgDevices}" alt="">`;
+  document.querySelector("#textOfDevices>h3").innerHTML =
+    res.data.texts.h3.title;
+  document.querySelector("#textOfDevices>span").innerHTML =
+    res.data.texts.h3.content;
+
+  let tempDevicesItems = "";
+  res.data.texts.h4.map((elem) => {
+    tempDevicesItems += `<div class="flex py-3">
+                <div class="w-[50px] flex justify-center">
+                  <img class="h-fit" src="${elem.src}" alt="">
+                </div>
+                <div>
+                  <h4 class="text-[14px] text-[#D8D8D8]">
+                    ${elem.title}
+                  </h4>
+                  <span class="text-[11px] text-[#A1A1A1]">
+                    ${elem.span}
+                  </span>
+                </div>
+              </div>`;
+  });
+
+  document.querySelector("#itemsOfDevices").innerHTML = tempDevicesItems;
+
+  document.querySelector(
+    "#btnBuyDevices"
+  ).innerHTML = `<img class="w-[25px]" src="${res.data.btnBuy.src}" alt="">${res.data.btnBuy.text}`;
 };
 
 export default devices;
