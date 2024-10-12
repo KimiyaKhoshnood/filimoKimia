@@ -33,16 +33,13 @@ const headerCodes = (res) => {
       <div id="dropdown-content" class="hidden absolute bg-[#181818] w-[330px] z-10 p-2 rounded-md flex-wrap">${tempDropdown}</div>
       </li>`;
 
-      // dropdown
 
-      console.log("first ", elem);
     } else if (elem.svg != false) {
       html2 += `<li id="headerItems" class="text-gray-300 hover:text-amber-500 flex items-center cursor-pointer">
       <i class="w-[25px] p-1"><img class="w-[20px]" src="${elem.svg}" alt=""></i>
       ${elem.text}
       </li>`;
 
-      console.log("sec", elem);
     } else if (elem.dropdown != false) {
       let tempDropdown = "";
       elem.dropdownItems.map((elem2) => {
@@ -57,13 +54,9 @@ const headerCodes = (res) => {
       <div id="dropdown-content" class="hidden absolute bg-[#181818] w-[330px] z-10 p-2 rounded-md flex-wrap shadow-md shadow-black">${tempDropdown}</div>
       </li>`;
 
-      // dropdown
-
-      console.log("third", elem);
     } else {
       html2 += `<li id="headerItems" class="text-gray-300 hover:text-amber-500 cursor-pointer">${elem.text}</li>`;
 
-      console.log("forth", elem);
     }
   });
 

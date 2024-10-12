@@ -107,7 +107,6 @@ const addAboutFilm = (res, temp) => {
 };
 
 const series = (res) => {
-  console.log("series");
 
   let html = "";
   res.data.series.map((elem) => {
